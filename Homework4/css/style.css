@@ -148,29 +148,87 @@ td.dsat{
 td.dsun{
     border-left: 5px solid #e84e40;
 }
+
+
 .table-info{
     max-width: 1200px;
     margin: auto;
     overflow: auto;
+    padding: 5px;
 }
 .info-subject{
-    height: 50px;
     width: 100%;
     text-align: left;
     font-size: 12px;
     border-collapse: collapse;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    overflow: hidden;
 }
-.table-info .info-subject th:nth-child(2), td:nth-child(2){
+.info-subject th{
+    height: 50px;
+    background-color: #cfd8dc;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+    padding: 12px 8px;
+    border: none;
+}
+.info-subject td{
+    padding: 15px 8px;
+    vertical-align: top;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background-color 0.2s ease;
+}
+.info-subject:hover td{
+    background-color: #f8f9ff;
+}
+.info-subject tr:last-child td{
+    border-bottom: none;
+}
+.info-subject th:nth-child(1), .info-subject td:nth-child(1){
+    width: 8%;
+    text-align: left;
+    font-weight: 400;
+    color: #4a5568;
+}
+.info-subject th:nth-child(2), .info-subject td:nth-child(2){
+    width: 6%;
+    text-align: left;
+    font-weight: 400;
+    color: #2d3748;
+}
+.info-subject th:nth-child(3), .info-subject td:nth-child(3){
+    width: 30%;
+    text-align: left;
     white-space: nowrap;
+}
+.info-subject th:nth-child(4), .info-subject td:nth-child(4){
+    width: 8%;
+    text-align: left;
+}
+.info-subject th:nth-child(5), .info-subject td:nth-child(5){
+    width: 20%;
+    text-align: left;
+}
+.info-subject th:nth-child(6), .info-subject td:nth-child(6){
+    width: 12%;
+    text-align: left;
+    font-weight: 400;
+}
+.info-subject th:nth-child(7), .info-subject td:nth-child(7){
+    width: 8%;
     text-align: center;
 }
-.table-info .info-subject td:nth-child(3){
-    white-space: nowrap;
+.info-subject th:nth-child(8), .info-subject td:nth-child(8){
+    width: 9%;
+    text-align: center;
+    font-size: 11px;
 }
-.info-subject tr{
-    border: 1px solid #bdbdbd;
-    padding: 5px;
+.info-subject th:nth-child(9), .info-subject td:nth-child(9){
+    width: 9%;
+    text-align: center;
+    font-size: 11px;
 }
 .engname{
     text-align: left;
