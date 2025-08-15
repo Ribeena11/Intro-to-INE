@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Type</title>
+</head>
+<body>
+    <form>
+        <h3>ส่วนที่ 1 : ข้อมูลส่วนตัวของผู้สมัคร</h3>
+            คำนำหน้าชื่อ :
+                <select required>
+                    <option value="mr">นาย</option>
+                    <option value="ms">นาง</option>
+                    <option value="mrs">นางสาว</option>
+                </select>
+            <br><br>
+            ชื่อ : 
+                <input type="text" required> <br><br>
+            นามสกุล :
+                <input type="text" required> <br><br>
+            เลขประจำตัวประชาชน :
+                <input type="text" maxlength="13" required> <br><br>
+            วันเดือนปีเกิด :
+                <input type="date" required> <br><br>
+            อายุ :
+                <input type="number" required> <br><br>
+            เพศ :
+                <input type="radio" value="men" required> ชาย
+                <input type="radio" value="women" required> หญิง 
+                <input type="radio" value="other" required> ไม่ระบุ <br><br>
+            สัญชาติ :
+                <input type="text" required> <br><br>
+            เชื้อชาติ :
+                <input type="text" required> <br><br>
+            ศาสนา :
+                <input type="text" required> <br><br>
+            เบอร์โทรศัพท์ :
+                <input type="tel" required> <br><br>
+            อีเมล :
+                <input type="email" required> <br><br>
+            ที่อยู่ :
+                <textarea required></textarea> <br><br>
+        <h3>ส่วนที่ 2 : ข้อมูลการสมัครเรียน</h3>
+            วุฒิที่จบมา :
+                <input type="radio" value="highschool" required> ม.6
+                <input type="radio" value="voc.cert" required> ปวช.
+                <input type="radio" value="diploma" required> ปวส.
+            ชื่อสถานศึกษาที่จบมา :
+                <input type="text" required> <br><br>
+            ปีที่จบ :
+                <input type="number" required> <br><br>
+            GPA :
+                <input type="number" step="0.01" min="0" max="4" required> <br><br>
+            สาขาที่สนใจสมัคร :
+                <select required>
+                    <option value="it">IT</option>
+                    <option value="iti">ITI</option>
+                    <option value="ine">INE</option>
+                    <option value="inet">INET</option>
+                </select>
+            <br><br>
+            เหตุผลที่เลือกสาขา :
+                <textarea required></textarea> <br><br>
+        <h3>ส่วนที่ 3 : ประวัติการศึกษา</h3>
+            ให้นักเรียนกรอกข้อมูลการศึกษา 3 ระดับ ได้แก่ :
+                ประถมศึกษา <br>
+                    สถานศึกษา <input type="text" required> <br><br>
+                    จังหวัด <input type="text" required> <br><br>
+                    ปีที่เข้า <input type="number" required> <br><br>
+                    ปีที่จบ <input type="number" required> <br><br>
+                    วุฒิที่ได้รับ <input type="text" required> <br><br>
+                    GPA <input type="number" step="0.01" min="0" max="4" required> <br><br>
+                มัธยมต้น <br>   
+                    สถานศึกษา <input type="text" required> <br><br>
+                    จังหวัด <input type="text" required> <br><br>
+                    ปีที่เข้า <input type="number" required> <br><br>
+                    ปีที่จบ <input type="number" required> <br><br>
+                    วุฒิที่ได้รับ <input type="text" required> <br><br>
+                    GPA <input type="number" step="0.01" min="0" max="4" required> <br><br>
+                มัธยมปลาย / ปวช. / ปวส. <br>
+                    สถานศึกษา <input type="text"> <br><br>   
+                    จังหวัด <input type="text"> <br><br>
+                    ปีที่เข้า <input type="number"> <br><br>    
+                    ปีที่จบ <input type="number"> <br><br>
+                    วุฒิที่ได้รับ <input type="text"> <br><br>
+                    GPA <input type="number" step="0.01" min="0" max="4"> <br><br>
+        <h3>ส่วนที่ 4 : เอกสารแนบ</h3> 
+            แนบไฟลล์สำเนาบัตรประจำตัวประชาชน :
+                <input type="file" required> <br><br>
+            แนบไฟล์วุฒิการศึกษา (เช่น ปพ.1):
+                <input type="file" required> <br><br>
+        <h3>ส่วนที่ 5 : ยืนยันและส่งฟอร์ม</h3>
+            <input type="checkbox" required> ยอมรับเงื่อนไข <br><br>
+            <input type="submit" value="บันทึก">
+            <input type="reset" value="ยกเลิก">
+    </form>
+</body>
+</html>
